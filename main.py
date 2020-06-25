@@ -5,10 +5,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # make an array of numbers between -5 and 5 with 0.1 between them
-# x will be like [-5, -4.9, -4.8, ..., 4.8, 4.9, 5]
+# x will look like [-5, -4.9, -4.8, ..., 4.8, 4.9, 5]
 x = np.arange(-5, 5, 0.1)
 # now make a plot with our x values determined by our array called x
-# the y is an array of the squares of each element of x
+# np.square(x) returns an array of the squares of each element of x, which we will use for our y values
 plt.plot(x, np.square(x))
 # tell matplotlib to open a window with our plot in it
 plt.show()
